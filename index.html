@@ -1,0 +1,571 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Internet Bendung - Solusi Internet Super Cepat</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #1a1a2e; /* Dark background */
+            color: #e0e0e0; /* Light text */
+        }
+        h1, h2, h3, h4 {
+            font-family: 'Montserrat', sans-serif;
+            color: #ffffff;
+        }
+        .header-bg {
+            background-color: #16213e; /* Slightly lighter dark blue for header */
+        }
+        .hero-section {
+            background: linear-gradient(135deg, #16213e 0%, #0f3460 100%);
+        }
+        .accent-color {
+            color: #e94560; /* Reddish accent */
+        }
+        .btn-primary {
+            background-color: #e94560;
+            color: white;
+            transition: background-color 0.3s ease;
+        }
+        .btn-primary:hover {
+            background-color: #ff6a80;
+        }
+        .btn-secondary {
+            border: 2px solid #533483; /* Purple border */
+            color: #e0e0e0;
+            transition: background-color 0.3s ease, border-color 0.3s ease;
+        }
+        .btn-secondary:hover {
+            background-color: #533483;
+            border-color: #533483;
+        }
+        .feature-card {
+            background-color: #0f3460;
+            border-radius: 10px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .feature-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+        }
+        .package-card {
+            background: linear-gradient(145deg, #16213e, #0f3460);
+            border: 1px solid transparent; /* default transparent border */
+            border-image: linear-gradient(45deg, #e94560, #533483) 1; /* gradient border */
+            border-width: 2px;
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.4);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .package-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.6);
+        }
+        .package-card-header {
+            background: linear-gradient(90deg, #e94560, #533483);
+            color: white;
+            padding: 1rem 1.5rem;
+            border-bottom: 2px solid #0f3460;
+        }
+        .testimonial-card {
+            background-color: #16213e;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+            border-left: 5px solid #e94560;
+        }
+        .footer-bg {
+            background-color: #0f3460;
+        }
+        .footer-logo-text {
+            color: #e94560; /* Orange-like accent for the logo part */
+        }
+        .coverage-map {
+            background: url('https://placehold.co/1200x600/16213e/e0e0e0?text=Peta+Area+Layanan') center/cover; /* Darker placeholder map */
+            border-radius: 10px;
+        }
+        .contact-icon-bg {
+            background-color: #0f3460;
+        }
+        .contact-form-bg {
+            background-color: #16213e;
+        }
+        input, textarea {
+            background-color: #0f3460;
+            border: 1px solid #533483;
+            color: #e0e0e0;
+        }
+        input:focus, textarea:focus {
+            border-color: #e94560;
+            outline: none;
+        }
+    </style>
+</head>
+<body class="bg-gray-900 text-gray-200">
+    <header class="header-bg shadow-lg sticky top-0 z-50">
+        <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <div class="flex items-center space-x-3">
+                <i class="fas fa-wifi text-3xl accent-color"></i>
+                <span class="text-2xl font-bold">Internet<span class="accent-color">Bendung</span></span>
+            </div>
+            
+            <nav class="hidden md:flex space-x-8">
+                <a href="#home" class="text-gray-300 hover:accent-color font-medium transition duration-300">Beranda</a>
+                <a href="#packages" class="text-gray-300 hover:accent-color font-medium transition duration-300">Paket</a>
+                <a href="#coverage" class="text-gray-300 hover:accent-color font-medium transition duration-300">Area Layanan</a>
+                <a href="#about" class="text-gray-300 hover:accent-color font-medium transition duration-300">Tentang Kami</a>
+                <a href="#contact" class="text-gray-300 hover:accent-color font-medium transition duration-300">Kontak</a>
+            </nav>
+            
+            <button class="md:hidden text-gray-300 focus:outline-none">
+                <i class="fas fa-bars text-2xl"></i>
+            </button>
+        </div>
+    </header>
+
+    <section id="home" class="hero-section text-white py-20 md:py-32 flex items-center min-h-screen">
+        <div class="container mx-auto px-6 text-center md:text-left flex flex-col md:flex-row items-center justify-between">
+            <div class="md:w-1/2 mb-10 md:mb-0">
+                <p class="text-lg accent-color mb-3 font-semibold">Selamat Datang di Internet Bendung</p>
+                <h1 class="text-5xl md:text-6xl font-extrabold leading-tight mb-6">
+                    Internet Super Cepat. <br> Era Baru Konektivitas.
+                </h1>
+                <p class="text-xl md:text-2xl mb-10 max-w-xl">
+                    Solusi Internet Handal untuk Rumah & Bisnis Anda. Nikmati kecepatan tanpa batas!
+                </p>
+                <div class="space-x-4">
+                    <a href="#packages" class="btn-primary font-bold py-3 px-8 rounded-full inline-block">Lihat Paket Kami</a>
+                    <a href="#contact" class="btn-secondary font-bold py-3 px-8 rounded-full inline-block">Hubungi Kami</a>
+                </div>
+            </div>
+            <div class="md:w-1/2 flex justify-center md:justify-end">
+                <i class="fas fa-network-wired text-9xl text-gray-600 opacity-20 md:opacity-100 md:text-[200px] animate-pulse"></i>
+                 </div>
+        </div>
+    </section>
+
+    <section class="py-16">
+        <div class="container mx-auto px-6">
+            <h2 class="text-4xl font-bold text-center mb-16">Mengapa Memilih Internet Bendung?</h2>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-10">
+                <div class="feature-card text-center p-8">
+                    <div class="accent-color w-20 h-20 mx-auto rounded-full flex items-center justify-center mb-6 text-4xl">
+                        <i class="fas fa-rocket"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-3">Kecepatan Maksimal</h3>
+                    <p class="text-gray-300">Rasakan browsing, streaming, dan gaming tanpa lag dengan koneksi kami.</p>
+                </div>
+                
+                <div class="feature-card text-center p-8">
+                    <div class="accent-color w-20 h-20 mx-auto rounded-full flex items-center justify-center mb-6 text-4xl">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-3">Koneksi Stabil</h3>
+                    <p class="text-gray-300">Jaringan handal dengan uptime tinggi, memastikan Anda selalu terhubung.</p>
+                </div>
+                
+                <div class="feature-card text-center p-8">
+                    <div class="accent-color w-20 h-20 mx-auto rounded-full flex items-center justify-center mb-6 text-4xl">
+                        <i class="fas fa-life-ring"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-3">Dukungan Responsif</h3>
+                    <p class="text-gray-300">Tim support kami siap membantu kapan pun Anda butuhkan, 24/7.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="packages" class="py-16">
+        <div class="container mx-auto px-6">
+            <h2 class="text-4xl font-bold text-center mb-6">Pilihan Paket Internet Fleksibel</h2>
+            <p class="text-center text-gray-400 max-w-3xl mx-auto mb-16">
+                Pilih paket yang paling sesuai dengan gaya hidup dan kebutuhan Anda. Semua paket sudah termasuk unlimited data!
+            </p>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-10">
+                <div class="package-card rounded-lg overflow-hidden flex flex-col">
+                    <div class="package-card-header text-center">
+                        <h3 class="text-2xl font-bold">Paket Basic</h3>
+                    </div>
+                    <div class="p-8 text-center flex flex-col flex-grow">
+                        <div class="flex-grow mb-8">
+                            <p class="text-5xl font-bold text-white mb-4">Rp120.000<span class="text-lg font-normal text-gray-400">/bulan</span></p>
+                            <p class="text-gray-400 mb-6">Ideal untuk pengguna personal & keluarga kecil.</p>
+                            <ul class="space-y-4 text-left text-lg">
+                                <li class="flex items-center">
+                                    <i class="fas fa-check-circle accent-color mr-3"></i>
+                                    <span>Kecepatan hingga 10 Mbps</span>
+                                </li>
+                                <li class="flex items-center">
+                                    <i class="fas fa-check-circle accent-color mr-3"></i>
+                                    <span>Streaming HD lancar</span>
+                                </li>
+                                <li class="flex items-center">
+                                    <i class="fas fa-check-circle accent-color mr-3"></i>
+                                    <span>Browsing & sosmed tanpa hambatan</span>
+                                </li>
+                            </ul>
+                        </div>
+                        <a href="https://wa.me/6285806006056?text=Halo%2C%20saya%20tertarik%20untuk%20mendaftar%20Paket%20Basic%20di%20Internet%20Bendung." target="_blank" class="btn-primary py-3 px-6 rounded-full inline-block self-center">Daftar Sekarang</a>
+                    </div>
+                </div>
+                
+                <div class="package-card rounded-lg overflow-hidden flex flex-col">
+                    <div class="package-card-header text-center">
+                        <h3 class="text-2xl font-bold">Paket Family <span class="text-sm">(Paling Populer)</span></h3>
+                    </div>
+                    <div class="p-8 text-center flex flex-col flex-grow">
+                        <div class="flex-grow mb-8">
+                            <p class="text-5xl font-bold text-white mb-4">Rp150.000<span class="text-lg font-normal text-gray-400">/bulan</span></p>
+                            <p class="text-gray-400 mb-6">Sempurna untuk keluarga dengan banyak perangkat.</p>
+                            <ul class="space-y-4 text-left text-lg">
+                                <li class="flex items-center">
+                                    <i class="fas fa-check-circle accent-color mr-3"></i>
+                                    <span>Kecepatan hingga 15 Mbps</span>
+                                </li>
+                                <li class="flex items-center">
+                                    <i class="fas fa-check-circle accent-color mr-3"></i>
+                                    <span>Multi-device support</span>
+                                </li>
+                                <li class="flex items-center">
+                                    <i class="fas fa-check-circle accent-color mr-3"></i>
+                                    <span>Gaming online lancar</span>
+                                </li>
+                            </ul>
+                        </div>
+                        <a href="https://wa.me/6285806006056?text=Halo%2C%20saya%20tertarik%20untuk%20mendaftar%20Paket%20Family%20di%20Internet%20Bendung." target="_blank" class="btn-primary py-3 px-6 rounded-full inline-block self-center">Daftar Sekarang</a>
+                    </div>
+                </div>
+                
+                <div class="package-card rounded-lg overflow-hidden flex flex-col">
+                    <div class="package-card-header text-center">
+                        <h3 class="text-2xl font-bold">Paket Bisnis</h3>
+                    </div>
+                    <div class="p-8 text-center flex flex-col flex-grow">
+                        <div class="flex-grow mb-8">
+                            <p class="text-5xl font-bold text-white mb-4">Rp200.000<span class="text-lg font-normal text-gray-400">/bulan</span></p>
+                            <p class="text-gray-400 mb-6">Solusi terbaik untuk kebutuhan bisnis & kantor.</p>
+                            <ul class="space-y-4 text-left text-lg">
+                                <li class="flex items-center">
+                                    <i class="fas fa-check-circle accent-color mr-3"></i>
+                                    <span>Kecepatan hingga 20 Mbps</span>
+                                </li>
+                                <li class="flex items-center">
+                                    <i class="fas fa-check-circle accent-color mr-3"></i>
+                                    <span>Prioritas Support 24/7</span>
+                                </li>
+                                <li class="flex items-center">
+                                    <i class="fas fa-check-circle accent-color mr-3"></i>
+                                    <span>Bandwidth besar untuk banyak pengguna</span>
+                                </li>
+                            </ul>
+                        </div>
+                        <a href="https://wa.me/6285806006056?text=Halo%2C%20saya%20tertarik%20untuk%20mendaftar%20Paket%20Bisnis%20di%20Internet%20Bendung." target="_blank" class="btn-primary py-3 px-6 rounded-full inline-block self-center">Daftar Sekarang</a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="mt-16 text-center">
+                <p class="text-gray-400 mb-6 text-xl">Butuh solusi kustom atau pertanyaan lebih lanjut?</p>
+                <a href="#contact" class="btn-secondary py-3 px-8 rounded-full inline-block">Bicaralah dengan Tim Kami <i class="fas fa-arrow-right ml-2"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <section id="coverage" class="py-16">
+        <div class="container mx-auto px-6">
+            <div class="flex flex-col md:flex-row items-center gap-12">
+                <div class="md:w-1/2 mb-10 md:mb-0">
+                    <h2 class="text-4xl font-bold mb-6">Area Layanan Kami</h2>
+                    <p class="text-gray-300 mb-8 text-lg">
+                        Kami terus memperluas jaringan kami untuk memastikan lebih banyak komunitas dapat menikmati internet cepat dan terjangkau dari Internet Bendung.
+                    </p>
+                    
+                    <div class="space-y-5 text-lg">
+                        <div class="flex items-center">
+                            <i class="fas fa-map-marker-alt accent-color text-2xl mr-4"></i>
+                            <h4 class="font-semibold">Dusun Bendung</h4>
+                        </div>
+                        <div class="flex items-center">
+                            <i class="fas fa-map-marker-alt accent-color text-2xl mr-4"></i>
+                            <h4 class="font-semibold">Dusun Belik</h4>
+                        </div>
+                        <div class="flex items-center">
+                            <i class="fas fa-map-marker-alt accent-color text-2xl mr-4"></i>
+                            <h4 class="font-semibold">Dusun Klubuk</h4>
+                        </div>
+                        <div class="flex items-center">
+                            <i class="fas fa-map-marker-alt accent-color text-2xl mr-4"></i>
+                            <h4 class="font-semibold">Dan area sekitarnya...</h4>
+                        </div>
+                    </div>
+                    
+                    <div class="mt-10">
+                        <a href="#contact" class="btn-primary py-3 px-8 rounded-full inline-flex items-center">
+                            Periksa Ketersediaan di Alamat Anda
+                            <i class="fas fa-search-location ml-3"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="md:w-1/2 h-96 coverage-map rounded-lg shadow-xl"></div>
+            </div>
+        </div>
+    </section>
+
+<section id="about" class="py-16">
+    <div class="container mx-auto px-6">
+        <div class="flex flex-col items-center"> 
+            
+            <div class="md:w-full text-center"> <h2 class="text-4xl font-bold mb-6">Tentang Internet Bendung</h2>
+                <p class="text-gray-300 mb-6 text-lg max-w-4xl mx-auto"> Internet Bendung didirikan dengan misi untuk menyediakan akses internet berkualitas tinggi, cepat, dan terjangkau untuk seluruh masyarakat. Kami percaya bahwa setiap orang berhak atas konektivitas yang andal.
+                </p>
+                <p class="text-gray-300 mb-8 text-lg max-w-4xl mx-auto"> Dengan tim teknisi yang berpengalaman dan infrastruktur yang terus diperbarui, kami berkomitmen untuk menjadi penyedia layanan internet pilihan utama Anda.
+                </p>
+                
+                <div class="grid grid-cols-2 gap-6 max-w-2xl mx-auto mt-10"> <div class="bg-gray-800 p-6 rounded-lg shadow-md">
+                        <h3 class="text-3xl font-bold accent-color mb-2">500+</h3>
+                        <p class="text-gray-400">Pelanggan Puas</p>
+                    </div>
+                    <div class="bg-gray-800 p-6 rounded-lg shadow-md">
+                        <h3 class="text-3xl font-bold accent-color mb-2">99.9%</h3>
+                        <p class="text-gray-400">Uptime Jaringan</p>
+                    </div>
+                    <div class="bg-gray-800 p-6 rounded-lg shadow-md">
+                        <h3 class="text-3xl font-bold accent-color mb-2">24/7</h3>
+                        <p class="text-gray-400">Dukungan Teknis</p>
+                    </div>
+                    <div class="bg-gray-800 p-6 rounded-lg shadow-md">
+                        <h3 class="text-3xl font-bold accent-color mb-2">Terdepan</h3>
+                        <p class="text-gray-400">Dalam Inovasi</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+    <section class="py-16">
+        <div class="container mx-auto px-6">
+            <h2 class="text-4xl font-bold text-center mb-16">Apa Kata Pelanggan Kami</h2>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-10">
+                <div class="testimonial-card p-8 rounded-lg">
+                    <div class="flex items-center mb-6">
+                        <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/1b92d714-e5d9-46f1-9c3a-2bbc29ff9a09.png" alt="Pak Budi" class="w-16 h-16 rounded-full mr-5 border-2 border-accent-color">
+                        <div>
+                            <h4 class="font-bold text-xl text-white">Pak Budi</h4>
+                            <p class="text-gray-400">Pedagang Online</p>
+                        </div>
+                    </div>
+                    <p class="text-gray-300 mb-6 text-lg">"Internet Bendung benar-benar mengubah cara saya berbisnis. Transaksi online jadi sangat cepat dan stabil. Sangat direkomendasikan!"</p>
+                    <div class="flex text-yellow-400 text-xl">
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                    </div>
+                </div>
+                
+                <div class="testimonial-card p-8 rounded-lg">
+                    <div class="flex items-center mb-6">
+                        <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/5ac6b29a-6687-4c73-a8fb-6b6488d4789f.png" alt="Ibu Siti" class="w-16 h-16 rounded-full mr-5 border-2 border-accent-color">
+                        <div>
+                            <h4 class="font-bold text-xl text-white">Ibu Siti</h4>
+                            <p class="text-gray-400">Guru & Ibu Rumah Tangga</p>
+                        </div>
+                    </div>
+                    <p class="text-gray-300 mb-6 text-lg">"Anak-anak saya bisa belajar online tanpa hambatan, dan saya bisa bekerja dari rumah dengan nyaman. Kualitas internetnya top!"</p>
+                    <div class="flex text-yellow-400 text-xl">
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
+                    </div>
+                </div>
+                
+                <div class="testimonial-card p-8 rounded-lg">
+                    <div class="flex items-center mb-6">
+                        <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/7e32c85a-3251-4878-a180-dee18d44cd55.png" alt="Mas Andi" class="w-16 h-16 rounded-full mr-5 border-2 border-accent-color">
+                        <div>
+                            <h4 class="font-bold text-xl text-white">Mas Andi</h4>
+                            <p class="text-gray-400">Pemilik Kafe</p>
+                        </div>
+                    </div>
+                    <p class="text-gray-300 mb-6 text-lg">"WiFi di kafe saya selalu ramai berkat Internet Bendung. Pelanggan betah berlama-lama, omzet pun meningkat. Terbaik!"</p>
+                    <div class="flex text-yellow-400 text-xl">
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-16 bg-gradient-to-r from-[#e94560] to-[#533483] text-white">
+        <div class="container mx-auto px-6 text-center">
+            <h2 class="text-4xl font-bold mb-6">Siap untuk Terhubung dengan Internet Bendung?</h2>
+            <p class="text-xl mb-10 max-w-3xl mx-auto">
+                Jangan lewatkan kesempatan untuk merasakan internet cepat, stabil, dan terjangkau.
+            </p>
+            <div class="space-y-6 md:space-y-0 md:space-x-8">
+                <a href="#contact" class="bg-white hover:bg-gray-100 text-gray-800 font-bold py-4 px-10 rounded-full inline-block transition duration-300 text-lg">
+                    Dapatkan Penawaran Terbaik
+                </a>
+                <a href="https://wa.me/6285806006056?text=Halo%2C%20saya%20ingin%20bertanya%20tentang%20layanan%20Internet%20Bendung" target="_blank" class="bg-transparent hover:bg-white hover:text-gray-800 text-white font-bold py-4 px-10 border-2 border-white rounded-full inline-block transition duration-300 text-lg">
+                    <i class="fab fa-whatsapp mr-3"></i> Chat via WhatsApp
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="py-16">
+        <div class="container mx-auto px-6">
+            <div class="flex flex-col md:flex-row gap-12">
+                <div class="md:w-1/2 mb-10 md:mb-0">
+                    <h2 class="text-4xl font-bold mb-6">Hubungi Kami</h2>
+                    <p class="text-gray-300 mb-8 text-lg">
+                        Tim kami siap membantu Anda 24/7. Jangan ragu untuk menghubungi kami melalui saluran di bawah ini.
+                    </p>
+                    
+                    <div class="space-y-8">
+                        <div class="flex items-start">
+                            <div class="contact-icon-bg p-4 rounded-full mr-5 text-accent-color text-2xl">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-xl text-white mb-1">Alamat Kantor</h4>
+                                <p class="text-gray-300 text-lg">Desa Bendung, Kab. Mojokerto</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-start">
+                            <div class="contact-icon-bg p-4 rounded-full mr-5 text-accent-color text-2xl">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-xl text-white mb-1">Email Resmi</h4>
+                                <p class="text-gray-300 text-lg">info@internetbendung.com</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-start">
+                            <div class="contact-icon-bg p-4 rounded-full mr-5 text-accent-color text-2xl">
+                                <i class="fab fa-whatsapp"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-xl text-white mb-1">Layanan Pelanggan</h4>
+                                <p class="text-gray-300 text-lg">0858-0600-6056 (WhatsApp & Telepon)</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="mt-10 p-6 contact-form-bg rounded-lg shadow-lg">
+                        <h4 class="font-bold text-xl text-white mb-4">Jam Operasional</h4>
+                        <div class="flex justify-between py-3 border-b border-gray-700">
+                            <span class="text-gray-300 text-lg">Senin - Minggu</span>
+                            <span class="font-bold text-white text-lg">24 JAM</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="md:w-1/2">
+                    <div class="contact-form-bg p-10 rounded-lg shadow-xl">
+                        <h3 class="text-3xl font-bold mb-8 text-white">Kirim Pesan Langsung</h3>
+                        <form action="https://formsubmit.co/info@internetbendung.com" method="POST">
+                            <input type="hidden" name="_next" value="https://example.com/terima-kasih.html">
+                            <input type="hidden" name="_captcha" value="false">
+                            <input type="hidden" name="_subject" value="Pesan Baru dari Website Internet Bendung">
+
+                            <div class="mb-6">
+                                <label for="name" class="block text-gray-300 font-semibold mb-3 text-lg">Nama Lengkap</label>
+                                <input type="text" id="name" name="name" class="w-full px-5 py-3 rounded-lg focus:ring-accent-color focus:border-accent-color" required>
+                            </div>
+                            <div class="mb-6">
+                                <label for="email" class="block text-gray-300 font-semibold mb-3 text-lg">Email</label>
+                                <input type="email" id="email" name="email" class="w-full px-5 py-3 rounded-lg focus:ring-accent-color focus:border-accent-color" required>
+                            </div>
+                            <div class="mb-6">
+                                <label for="phone" class="block text-gray-300 font-semibold mb-3 text-lg">Nomor HP</label>
+                                <input type="tel" id="phone" name="phone" class="w-full px-5 py-3 rounded-lg focus:ring-accent-color focus:border-accent-color" required>
+                            </div>
+                            <div class="mb-8">
+                                <label for="message" class="block text-gray-300 font-semibold mb-3 text-lg">Pesan Anda</label>
+                                <textarea id="message" name="message" rows="6" class="w-full px-5 py-3 rounded-lg focus:ring-accent-color focus:border-accent-color" required></textarea>
+                            </div>
+                            <button type="submit" class="w-full btn-primary font-bold py-4 px-6 rounded-full text-xl">Kirim Pesan</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer-bg text-white py-12">
+        <div class="container mx-auto px-6">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-10">
+                <div class="md:col-span-2">
+                    <div class="flex items-center space-x-3 mb-6">
+                        <i class="fas fa-wifi text-3xl accent-color"></i>
+                        <span class="text-3xl font-bold">Internet<span class="accent-color">Bendung</span></span>
+                    </div>
+                    <p class="text-gray-400 mb-6 text-lg">
+                        Misi kami adalah menghubungkan masyarakat dengan internet berkualitas, mendukung produktivitas dan hiburan Anda.
+                    </p>
+                    <div class="flex space-x-6 text-2xl">
+                        <a href="#" class="text-gray-400 hover:accent-color transition duration-300"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="text-gray-400 hover:accent-color transition duration-300"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="text-gray-400 hover:accent-color transition duration-300"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+                </div>
+                
+                <div>
+                    <h4 class="text-2xl font-bold mb-6">Navigasi</h4>
+                    <ul class="space-y-4 text-lg">
+                        <li><a href="#home" class="text-gray-400 hover:accent-color transition duration-300">Beranda</a></li>
+                        <li><a href="#packages" class="text-gray-400 hover:accent-color transition duration-300">Paket Internet</a></li>
+                        <li><a href="#coverage" class="text-gray-400 hover:accent-color transition duration-300">Area Layanan</a></li>
+                        <li><a href="#about" class="text-gray-400 hover:accent-color transition duration-300">Tentang Kami</a></li>
+                        <li><a href="#contact" class="text-gray-400 hover:accent-color transition duration-300">Kontak</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h4 class="text-2xl font-bold mb-6">Info Penting</h4>
+                    <ul class="space-y-4 text-lg">
+                        <li><a href="#" class="text-gray-400 hover:accent-color transition duration-300">Syarat & Ketentuan</a></li>
+                        <li><a href="#" class="text-gray-400 hover:accent-color transition duration-300">Kebijakan Privasi</a></li>
+                        <li><a href="#" class="text-gray-400 hover:accent-color transition duration-300">FAQ</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="border-t border-gray-700 mt-12 pt-8 text-center text-gray-500 text-md">
+                <p>&copy; 2025 Internet Bendung. Hak Cipta Dilindungi.</p>
+                <p class="mt-3">Didesain dengan <i class="fas fa-heart text-red-500 mx-1"></i> oleh Faidcode</p>
+                
+                <a href="nota.html" class="text-gray-500 hover:text-white text-sm mt-5 inline-block transition duration-300">
+                    <i class="fas fa-user-shield mr-2"></i> Admin Login
+                </a>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+
+        // Optional: Toggle mobile menu (jika Anda ingin mengimplementasikan menu burger)
+        const mobileMenuButton = document.querySelector('header button');
+        const mobileMenu = document.querySelector('header nav'); // Asumsi nav ini akan jadi mobile menu
+        
+        // Contoh sederhana toggle, perlu penyesuaian untuk tampilan mobile
+        // mobileMenuButton.addEventListener('click', () => {
+        //     mobileMenu.classList.toggle('hidden');
+        // });
+    </script>
+</body>
+</html>
